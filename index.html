@@ -4,62 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/images.png" />
+    <link rel="stylesheet" href="style.css" />
     <title>Soundwave | Home</title>
-
-    <style>
-      * {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-      }
-
-      /* CSS Variable */
-      :root {
-        --primary: #6366f1;
-        --primary-hover: #4f46e5;
-        --bg-dark: #0f172a;
-        --gb-card: #1e293b;
-        --text-light: #f8faf6;
-        --text-muted: #94a3b8;
-        --border: #334155;
-        --header-height: 70px;
-      }
-
-      html {
-        scroll-behavior: smooth;
-      }
-
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: var(--bg-dark);
-        color: var(--text-light);
-        line-height: 1.6;
-      }
-    </style>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <a href="/">Sound <span>Wave</span></a>
+      <a href="/" class="logo">Sound <span>Wave</span></a>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/" class="active">Home</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Gallery</a></li>
-          <li><a href="#">Audio & Vdeo</a></li>
+          <li><a href="#">Audio & Video</a></li>
         </ul>
       </nav>
     </header>
 
     <!-- Hero Section -->
     <main>
-      <div>
+      <div class="hero">
         <h1>Next-Gen Media Experience</h1>
         <p>
           Explore high-definition videos, curated audio tracks, and photography
           built entirely with HTML5 and custom internal CSS.
         </p>
-        <a href="#">Listen & Watch Now</a>
+        <a href="#" class="cta-btn">Listen & Watch Now</a>
       </div>
 
       <!-- Slider section -->
