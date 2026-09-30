@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/images/icon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Soundwave - Audio and Video</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: "#6366f1",
+                accent: "#818cf8",
+              },
+              "bg-dark": "#0f172a",
+              "bg-card": "#1e293b",
+              "text-light": "#f8fafc",
+              "text-muted": "#94a3b8",
+              border: "#334155",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-bg-dark font-sans text-text-light antialiased leading-relaxed"
+  >
+    <header
+      class="fixed top-0 left-0 w-full h-[70px] bg-bg-dark/85 backdrop-blur-md border-b border-border flex justify-between items-center px-[5%] z-50"
+    >
+      <a href="/" class="text-2xl font-bold text-text-light"
+        >Sound<span class="text-primary">Wave</span></a
+      >
+      <nav>
+        <ul class="flex list-none gap-5">
+          <li>
+            <a
+              href="/index.html"
+              class="text-text-muted hover:text-text-light hover:bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about-us"
+              class="text-text-muted hover:text-text-light hover:bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="/gallery.html"
+              class="text-text-muted hover:text-text-light hover:bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              href="/media.html"
+              class="text-text-light bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
+              >Audio & Video</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <div
+      class="relative w-full h-[80vh] min-h-[500px] flex items-center text-center overflow-hidden mt-[70px]"
+    >
+      <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto z-10 -translate-x-1/2 -translate-y-1/2 object-cover">
+        <source
+          src="/assets/video/WhatsApp Video 2026-09-22 at 11.25.00 AM.mp4"
+          type="video/mp4"
+        />
+        your browser does not support HTMLS video.
+      </video>
+
+      <!-- dark tint overlay -->
+      <div class="absolute inset-0 bg-gradient-to-b from- [#0f172a]/25 via-[#0f172a]/45 to-bg-dark z-20"></div>
+
+      <div class="relative z-30 max-w-[800px] px-5">
+        <h1 class="text-3xl md:text-[3.2rem] font-extrabold mb-4 leading-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]">Immersive Audio &amp; Visual Experience</h1>
+        <p>
+          Explore our curated collection of high-fidelity soundscapes, live
+          studio performances, and video showcase.
+        </p class="text-base md:text xl text-[#f1f5f9] mb-7 drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]">
+        <a href="#media-section" class="inline-block bg-primary hover: bg-primary-accent text-white px-7 py-3 rounded-lg font-semibold-all duration-200 hover:-translate-y-0.5">Browse showcase</a>
+      </div>
+    </div>
+
+    <!-- main media section -->
+     <main id="media-section" class="pt-10 pb-[60px] max-w-[1100px] mx-auto px-5">
+        <h2 
+        class="text-2xl font-bold mb-6 border-l-4 border-primary pl-3">Featured Videos
+      </h2>
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-6 mb-[60px]">
+            <div class="bg-bg-card border-border rounded-xl p-5 flex flex-col gap-4">
+                <h3 
+                class="text-lg font-semibold text-text-light">Studio Production Reel
+              </h3>
+                <video 
+                controls class="w-full rounded-lg outline-none">
+                    <source src="/assets/video/WhatsApp Video 2026-09-22 at 11.25.00 AM.mp4" type="video/mp4"/>
+                    your browser does not support the video tag.
+                </video>
+                <p class="text-sm text-text-muted">
+                  Behind-the-scenes footage from our main recording control room.
+                </p>
+            </div>
+
+            <div class="bg-bg-card border-border rounded-xl p-5 flex flex-col gap-4">
+                <h3 class="text-lg font-semibold text-text-light">Live Acoustics Demo</h3>
+                <video controls class="w-full rounded-lg outline-none">
+                    <source src="/assets/video/WhatsApp Video 2026-09-22 at 11.25.00 AM.mp4" type="video/mp4"/>
+                    your browser does not support the video tag.
+                </video>
+                <p class="text-sm text-text-muted">
+                  Acoustics performance recoreded with surround spatial microphones.
+                </p>
+            </div>
+        </div>
+     </main>
+  </body>
+</html>
