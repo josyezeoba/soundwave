@@ -46,7 +46,7 @@
           </li>
           <li>
             <a
-              href="#about-us"
+              href="/index.html#about-us"
               class="text-text-muted hover:text-text-light hover:bg-bg-card font-semibold px-4 py-2 rounded-md transition-all duration-300"
               >About Us</a
             >
@@ -71,7 +71,7 @@
 
     <!-- hero section -->
     <div
-      class="relative w-full h-[80vh] min-h-[500px] flex items-center text-center overflow-hidden mt-[70px]"
+      class="relative w-full h-[80vh] min-h-[500px] flex items-center justify-center text-center overflow-hidden mt-[70px]"
     >
       <video autoplay loop muted playsinline class="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto z-10 -translate-x-1/2 -translate-y-1/2 object-cover">
         <source
@@ -95,36 +95,62 @@
     </div>
 
     <!-- main media section -->
-     <main id="media-section" class="pt-10 pb-[60px] max-w-[1100px] mx-auto px-5">
-        <h2 
-        class="text-2xl font-bold mb-6 border-l-4 border-primary pl-3">Featured Videos
+    <main id="media-section" class="pt-10 pb-[60px] max-w-[1100px] mx-auto px-5">
+      <h2 class="text-2xl font-bold mb-6 border-l-4 border-primary pl-3">
+        Featured Videos
       </h2>
-        <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-6 mb-[60px]">
-            <div class="bg-bg-card border-border rounded-xl p-5 flex flex-col gap-4">
-                <h3 
-                class="text-lg font-semibold text-text-light">Studio Production Reel
-              </h3>
-                <video 
-                controls class="w-full rounded-lg outline-none">
-                    <source src="/assets/video/WhatsApp Video 2026-09-22 at 11.25.00 AM.mp4" type="video/mp4"/>
-                    your browser does not support the video tag.
-                </video>
-                <p class="text-sm text-text-muted">
-                  Behind-the-scenes footage from our main recording control room.
-                </p>
-            </div>
+      <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-6 mb-[60px]">
+          <div class="bg-bg-card border-border rounded-xl p-5 flex flex-col gap-4">
+              <h3 
+              class="text-lg font-semibold text-text-light">Studio Production Reel
+            </h3>
+              <video 
+              controls class="w-full rounded-lg outline-none">
+                  <source src="/assets/video/WhatsApp Video 2026-09-22 at 11.25.00 AM.mp4" type="video/mp4"/>
+                  your browser does not support the video tag.
+              </video>
+              <p class="text-sm text-text-muted">
+                Behind-the-scenes footage from our main recording control room.
+              </p>
+          </div>
 
-            <div class="bg-bg-card border-border rounded-xl p-5 flex flex-col gap-4">
-                <h3 class="text-lg font-semibold text-text-light">Live Acoustics Demo</h3>
-                <video controls class="w-full rounded-lg outline-none">
-                    <source src="/assets/video/WhatsApp Video 2026-09-22 at 11.25.00 AM.mp4" type="video/mp4"/>
-                    your browser does not support the video tag.
-                </video>
-                <p class="text-sm text-text-muted">
-                  Acoustics performance recoreded with surround spatial microphones.
-                </p>
-            </div>
+          <div class="bg-bg-card border-border rounded-xl p-5 flex flex-col gap-4">
+              <h3 class="text-lg font-semibold text-text-light">Live Acoustics Demo</h3>
+              <video controls class="w-full rounded-lg outline-none">
+                  <source src="/assets/video/WhatsApp Video 2026-09-22 at 11.25.00 AM.mp4" type="video/mp4"/>
+                  your browser does not support the video tag.
+              </video>
+              <p class="text-sm text-text-muted">
+                Acoustics performance recoreded with surround spatial microphones.
+              </p>
+          </div>
+      </div>
+
+      <h2 
+      class="text-2xl font-bold mb-6 border-l-4 border-primary pl-3">Audio Tracks
+    </h2>
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-6">
+        <div class="bg-bg-card border border-border rounded-xl p-5 flex flex-col gap-4">
+        <h3 class="text-lg font-semibold text-text-light">Ambient Synthesizer Track</h3>
+        <p class="text-sm text-text-muted">Relaxing analog synth arrangement mixed in Dolby Atmos space.</p>
+        <audio controls class="w-full rounded-lg outline-none">
+          <source src="/assets/audio/mixkit-crickets-and-insects-in-the-wild-ambience-39.wav">
+        </audio>
         </div>
-     </main>
+
+        <div class="bg-bg-card border border-border rounded-xl p-5 flex flex-col gap-4">
+        <h3 class="text-lg font-semibold text-text-light">Studio Guitar session</h3>
+        <p class="text-sm text-text-muted">Raw acoustic Recording testing frequency balance</p>
+        <audio controls class="w-full rounded-lg outline-none">
+          <source src="/assets/audio/mixkit-crickets-and-insects-in-the-wild-ambience-39.wav">
+        </audio>
+        </div>
+    </div>
+    </main>
+
+     <!-- footer section -->
+      <footer class="bg-bg-dark/95 border-t border-border py-[30px] px-[5%] text-center text-text-muted text-sm">
+        <p>&copy; 2026 Soundwave Media Studio. built with HTML 5 &amp; Tailwind CSS.</p>
+      </footer>
   </body>
 </html>
